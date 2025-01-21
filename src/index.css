@@ -18,6 +18,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -25,14 +26,45 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  width: 100%;
   min-height: 100vh;
+}
+
+header {
+  background-color: #1a1a1a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:hover {
+  color: orange;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  background-color: #f9f9f9;
+  max-width: 300px;
+  height: auto;
 }
 
 button {
@@ -46,9 +78,15 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
+img {
+  width: 100%;
+}
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -56,12 +94,14 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #000;
+    background-color: #fff;
   }
+
   a:hover {
-    color: #747bff;
+    color: #ffa500;
   }
+
   button {
     background-color: #f9f9f9;
   }
