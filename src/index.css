@@ -26,9 +26,31 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  width: 100%;
   min-height: 100vh;
+}
+
+header {
+  background-color: #1a1a1a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:hover {
+  color: orange;
 }
 
 h1 {
@@ -42,7 +64,7 @@ h1 {
   padding: 8px;
   background-color: #f9f9f9;
   max-width: 300px;
-  height: 400px;
+  height: auto;
 }
 
 button {
@@ -72,12 +94,12 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #fff;
-    background-color: #000;
+    color: #000;
+    background-color: #fff;
   }
 
   a:hover {
-    color: #747bff;
+    color: #ffa500;
   }
 
   button {
